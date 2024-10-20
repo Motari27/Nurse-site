@@ -10,7 +10,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag(){dataLayer.push(arguments);}        
         gtag('js', new Date());
         gtag('config', 'UA-XXXXXXXXX-X');
     </script>
@@ -26,13 +26,13 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section id="hero">
             <h1>Welcome to Jabez Motari's Nursing Portfolio</h1>
             <p>Experienced nurse dedicated to providing exceptional care and helping the community.</p>
         </section>
-        
+
         <section id="services">
             <h2>Services</h2>
             <ul>
@@ -41,7 +41,7 @@
                 <li>Community Health Education</li>
             </ul>
         </section>
-        
+
         <section id="testimonials">
             <h2>Testimonials</h2>
             <blockquote>
@@ -49,15 +49,52 @@
                 <footer>- Community Member</footer>
             </blockquote>
         </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery2.jpg" alt="Gallery Image 2">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="formMessage"></div>
+        </section>
     </main>
-    
+
     <footer>
         <p>&copy; 2024 Jabez Motari. All Rights Reserved.</p>
         <div class="social-media">
-            <a href="https://www.facebook.com/motari.jabez" target="_blank">Facebook</a>
-            <a href="https://www.linkedin.com/in/motari.jabez" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/motari.jabez" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/motari.jabez" target="_blank">
+                <img src="assets/images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/motari.jabez" target="_blank">
+                <img src="assets/images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/motari.jabez" target="_blank">
+                <img src="assets/images/instagram.png" alt="Instagram">
+            </a>
         </div>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
