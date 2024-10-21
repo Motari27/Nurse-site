@@ -10,7 +10,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}        
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-XXXXXXXXX-X');
     </script>
@@ -18,9 +18,10 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -28,21 +29,36 @@
     </header>
 
     <main>
-        <section id="hero">
+        <section id="hero" class="hero-content">
             <h1>Welcome to Jabez Motari's Nursing Portfolio</h1>
             <p>Experienced nurse dedicated to providing exceptional care and helping the community.</p>
+            <a href="#services" class="cta">Learn More</a>
         </section>
 
-        <section id="services">
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>I am Jabez Motari, an experienced nurse with a passion for patient care and community health. With over a decade of experience, I have dedicated myself to providing exceptional medical care and education to those in need.</p>
+        </section>
+
+        <section id="services" class="programs-section">
             <h2>Services</h2>
-            <ul>
-                <li>Patient Care</li>
-                <li>Health Assessments</li>
-                <li>Community Health Education</li>
-            </ul>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>Patient Care</h3>
+                    <p>Providing compassionate and professional care to all patients.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Health Assessments</h3>
+                    <p>Conducting comprehensive health assessments to ensure the well-being of the community.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Community Health Education</h3>
+                    <p>Empowering the community through health education and awareness programs.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="testimonials">
+        <section id="testimonials" class="testimonials-section">
             <h2>Testimonials</h2>
             <blockquote>
                 <p>"Jabez's care and dedication are unmatched. He has made a significant impact on our community."</p>
@@ -50,7 +66,7 @@
             </blockquote>
         </section>
 
-        <section id="gallery">
+        <section id="gallery" class="gallery-section">
             <h2>Gallery</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
@@ -62,18 +78,31 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="faq" class="faq-section">
+            <h2>FAQ</h2>
+            <div class="accordion-item">
+                <button class="accordion-header">What services do you offer?</button>
+                <div class="accordion-content">
+                    <p>We offer patient care, health assessments, and community health education.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">How can I contact you?</button>
+                <div class="accordion-content">
+                    <p>You can reach us through the contact form on this page or via social media.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
             <h2>Contact Me</h2>
             <form id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                
                 <button type="submit">Submit</button>
             </form>
             <div id="formMessage"></div>
